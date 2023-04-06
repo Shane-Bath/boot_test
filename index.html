@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
     <meta charset="UTF-8">
@@ -12,28 +12,33 @@
     </script>
     <title>Whiskey | Taste a new whiskey every month</title>
 </head>
-<nav class="navbar navbar-light bg-light navbar-expand-sm">
-    <a href="/" class="nabar-brand">Whiskey Drop</a>
-    <ul class="navbar-nav mr-auto">
-        <li class="active nav-item mr-2"><a href="/" class="nav-link">Home</a></li>
-        <li class="active nav-item mr-2"><a href="/" class="nav-link">About</a></li>
-        <li class="active nav-item mr-2 d-block d-sm-none"><a href="/login">Sign In / Sign Up</a></li>
-    </ul>
-    <div class="d-none d-md-block">
-        <p class="nave-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
-        <a href="/login">Sign In / Sign Up</a>
-    </div>
-</nav>
 
 <body>
-    <article class="container">
+    <!-- nav -->
+    <nav class="navbar navbar-light bg-light navbar-expand-sm fixed-top">
+        <a href="/" class="nabar-brand">Whiskey Drop</a>
+        <ul class="navbar-nav mr-auto">
+            <li class="active nav-item mr-2"><a href="/" class="nav-link">Home</a></li>
+            <li class="active nav-item mr-2"><a href="/" class="nav-link">About</a></li>
+            <li class="active nav-item mr-2 d-block d-sm-none"><a href="/login" class="nav-link">Sign In / Sign Up</a>
+            </li>
+        </ul>
+        <div class="d-none d-md-block">
+            <p class="nave-text my-auto mr-2"><i>Great whiskey delivered to your door!</i></p>
+            <a href="/login">Sign In / Sign Up</a>
+        </div>
+    </nav>
+    <!-- ./nav -->
+    <article class="container mt-3">
         <!-- callout -->
         <div class="row">
             <div class="col-12">
-                <section class="class callout">
+                <section class="callout jumbotron text-center">
                     <h1>The finest whiskeys delivered to your doorstep.</h1>
                     <p class="lead">Sign up today to start receiving the world's best whiskeys every month.
-                        <s>€19.99</s> <strong><mark>First one is free of charge!</mark></strong></p>
+                        <s class="d-none d-sm-inline">€19.99</s>
+                        <span class="d-inline d-sm-inline"><br></span>
+                        <strong><mark>First one is free of charge!</mark></strong></p>
                     <button class="btn btn-success btn-lg">Sign Up!</button>
                     <p class="text-muted"><small>You must be over 18 to sign up to our service. Please, drink
                             responsibly</small></p>
@@ -47,16 +52,23 @@
         <!--quotes -->
         <section class="quotes">
             <div class="row">
-                <div class="col-12 md-6">
+                <div class="col-12 my-5">
                     <h2 class="text-uppercase">Quotes</h2>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12">
-                    <blockquote class="blockquote">
-                        <p>I've been introduced to more than 10 great international whiskeys I never knew about</p>
-                        <p>Jane Doe</p>
-                    </blockquote>
+                <div class="col-12 col-md-6">
+                    <div class="media">
+                        <img src="images/girl.png" class="rounded-circle mr-3" height="100px" width="100px"
+                            alt="">
+                        <div class="media-body">
+                            <blockquote class="blockquote">
+                                <p>I've been introduced to more than 10 great international whiskeys I never knew about
+                                </p>
+                                <p>Jane Doe</p>
+                            </blockquote>
+                        </div>
+                    </div>
                 </div>
                 <blockquote class="blockquote">
                     <div class="col-12">
@@ -73,9 +85,9 @@
         <!-- Features -->
         <section class="features">
             <div class="row">
-                <col-12>
-                    <h2>Features:</h2>
-                </col-12>
+                <div class="col-12 my-5">
+                    <h2 class="text-uppercase">Features:</h2>
+                </div>
             </div>
             <div class="row">
                 <div class="col-12 md-6 col-lg-4">
